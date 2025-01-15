@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous">
+    <title>Plan Your Trip</title>
+</head>
+<body class="bg-info-subtle">
+  <!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-info-subtle border-bottom border-info-subtle border-4 navbar-light ps-4 sticky-top">
+  <!--Logo-->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/Travel-Greece-logo.svg" width="60" alt="Travel Greece Logo">
+    </a>
+  <!--Hamburger menu icon-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <!--Navbar items that will go into hamburger menu-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-info" aria-current="page" href="index.html">About Greece</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-info fw-bolder" href="planTrip.html">Plan Your Trip</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<img src="images/greekIslands.jpg" width="100%" alt="">
+<!--Card-->
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="true" href="planTripMainland.html">Greek Mainland</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="planTripIsland.html">Greek Islands</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <!--Table-->
+  <table class="table caption-top table-info table-striped table-hover table-responsive">
+    <caption class="me-auto">The best cities to visit in Greece </caption>
+   <thead>
+    <tr>
+      <th scope="col" class="h3 text-info">City</th>
+      <th scope="col" class="h3 text-info">Hotels</th>
+      <th scope="col" class="h3 text-info">Attractions</th>
+      <th scope="col" class="h3 text-info">Map</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" class="h5">Athens</th>
+      <td><a class="text-secondary" href="https://www.booking.com/city/gr/athens.html?aid=336408;label=athens-jJZ11*UiRLishp794Q8YwQS553260633045:pl:ta:p1680:p2:ac:ap:neg:fi:tikwd-125922174:lp9018859:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4;ws=&gclid=Cj0KCQjws560BhCuARIsAHMqE0E9d2Le7vyvBpvH-TYKJ7kYG0I5ZEcTkXhurvNRixa8uuL--4YOuPgaAtDrEALw_wcB"target="_blank">booking.com hotels</a></td>
+      <td>Acropolis & Parthenon</td>
+      <td><a href="https://www.google.com/maps/place/Athens,+Greece/@37.9908085,23.6559384,12z/data=!3m1!4b1!4m6!3m5!1s0x14a1bd1f067043f1:0x2736354576668ddd!8m2!3d37.9838096!4d23.7275388!16zL20vMG4yeg?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">Google Maps-Athens</a></td>
+    </tr>
+    <tr>
+      <th scope="row" class="h5">Thessaloniki</th>
+      <td><a  style="text-decoration: none;" href="https://www.booking.com/searchresults.html?ss=Thessaloniki&ssne=Athens&ssne_untouched=Athens&efdco=1&label=athens-jJZ11*UiRLishp794Q8YwQS553260633045%3Apl%3Ata%3Ap1680%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-125922174%3Alp9018859%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4&aid=336408&lang=en-us&sb=1&src_elem=sb&src=city&dest_id=-829252&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=f0df10a2ef470499&ac_meta=GhBmMGRmMTBhMmVmNDcwNDk5IAAoATICZW46DFRoZXNzYWxvbmlraUAASgBQAA%3D%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&sb_lp=10" target="_blank">booking.com hotels</a></td>
+      <td>White Tower</td>
+      <td>Google Maps</td>
+    </tr>
+    <tr>
+      <th scope="row" class="h5">Piraeus</th>
+      <td><a style="text-decoration: none;" href="https://www.booking.com/searchresults.html?ss=Piraeus%2C+Attica%2C+Greece&ssne=Thessaloniki&ssne_untouched=Thessaloniki&efdco=1&label=athens-jJZ11*UiRLishp794Q8YwQS553260633045%3Apl%3Ata%3Ap1680%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-125922174%3Alp9018859%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4&aid=336408&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-826292&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=657310e9f4a500d5&ac_meta=GhA2NTczMTBlOWY0YTUwMGQ1IAAoATICZW46B3BpcmFldXNAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0" target="_blank">booking.com hotels</a></td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row" class="h5">Hydra</th>
+      <td><a  style="text-decoration: none;" href="" target="_blank">booking.com hotels</a></td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row" class="h5">Lamía, Central Greece</th>
+      <td><a  style="text-decoration: none;" href="" target="_blank">booking.com hotels</td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row" class="h5">Rhodes Old Town</th>
+      <td><a style="text-decoration: none;" href="" target="_blank">booking.com hotels</a></td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row" class="h5">Volos</th>
+      <td><a style="text-decoration: none;" href="" target="_blank">booking.com hotels</td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row" class="h5">Chania</th>
+      <td><a style="text-decoration: none;" href="" target="_blank">booking.com hotels</td>
+      <td> </td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<p><a class="h5 mb-auto text-secondary" style="text-decoration: none;"href="https://www.celebritycruises.com/blog/cities-in-greece" target="_blank">A list of a few more cities to visit</a></p>
+ <nav class="navbar bg-info-subtle">
+  <div class="container-fluid">
+    <a class="navbar-brand m-auto" href="#">
+      <img src="images/Travel-Greece-logo.svg" alt="Logo" width="150" class="d-inline-block align-text-top">
+    </a>
+  </div>
+</nav>
+  </div>
+</nav>
+</div>
+<!--Script telling the site to use the bootstrap bundle. I am using the latest version of bootstrap which doesn't need jquery-->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
