@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous"><!--Allows me to use bootstrap in this code-->
     <title>Plan Your Trip</title>
 </head>
-<body class="bg-info-subtle">
+<body class="bg-light">
   <!--Navbar-->
-<nav class="navbar navbar-expand-lg bg-info-subtle border-bottom border-info-subtle border-4 navbar-light ps-4 sticky-top">
+<nav class="navbar navbar-expand-lg bg-info-subtle border-bottom border-info-subtle border-4 ps-4 sticky-top">
   <!--Logo-->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="images/Travel-Greece-logo.svg" width="60" alt="Travel Greece Logo">
     </a>
   <!--Hamburger menu icon-->
@@ -28,6 +28,7 @@
           <a class="nav-link active text-info fw-bolder" href="planTrip.html">Plan Your Trip</a>
         </li>
       </ul>
+  <!--Form/search bar-->
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-info" type="submit">Search</button>
@@ -37,14 +38,14 @@
 </nav>
 <img src="images/greekIslands.jpg" width="100%" alt="">
 <!--Card-->
-<div class="card text-center">
+<div class="card text-center"><!--this centers the text of each card-->
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="true" href="planTripMainland.html">Greek Mainland</a>
+        <a class="nav-link active text-info" aria-current="true" href="planTripMainland.html">Greek Mainland</a><!--The first tab, the one that is "active"-->
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="planTripIsland.html">Greek Islands</a>
+        <a class="nav-link text-info" href="planTripIsland.html">Greek Islands</a><!--The second tab of the card-->
       </li>
     </ul>
   </div>
@@ -52,9 +53,9 @@
     <h5 class="card-title"></h5>
     <!--Table-->
   <table class="table caption-top table-info table-striped table-hover table-responsive">
-    <caption class="me-auto">The best cities to visit in Greece </caption>
+    <caption class="h2 text-center text-info mb-3">The Best Cities to Visit on the Mainland of Greece </caption>
    <thead>
-    <tr>
+    <tr><!--The different categories of the tables on the card-->
       <th scope="col" class="h3 text-info">City</th>
       <th scope="col" class="h3 text-info">Hotels</th>
       <th scope="col" class="h3 text-info">Attractions</th>
@@ -62,71 +63,72 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row" class="h5">Athens</th>
-      <td><a class="text-secondary" href="https://www.booking.com/city/gr/athens.html?aid=336408;label=athens-jJZ11*UiRLishp794Q8YwQS553260633045:pl:ta:p1680:p2:ac:ap:neg:fi:tikwd-125922174:lp9018859:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4;ws=&gclid=Cj0KCQjws560BhCuARIsAHMqE0E9d2Le7vyvBpvH-TYKJ7kYG0I5ZEcTkXhurvNRixa8uuL--4YOuPgaAtDrEALw_wcB"target="_blank">booking.com hotels</a></td>
+    <tr><!--The items that are listed under each category by location. Inclues working links-->
+      <th scope="row" class="h5">Athens</th><!--row: gives program direction to start a new row and include the items below in different columns-->
+      <td><a class="text-decoration-none" href="https://www.booking.com/city/gr/athens.html?aid=336408;label=athens-jJZ11*UiRLishp794Q8YwQS553260633045:pl:ta:p1680:p2:ac:ap:neg:fi:tikwd-125922174:lp9018859:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4;ws=&gclid=Cj0KCQjws560BhCuARIsAHMqE0E9d2Le7vyvBpvH-TYKJ7kYG0I5ZEcTkXhurvNRixa8uuL--4YOuPgaAtDrEALw_wcB"target="_blank">booking.com hotels</a></td> <!--target="_blank": tells the site to open the link in a new tab. I wanted to do it this way so the user didn't have to use the back button in order to get back to the site-->
       <td>Acropolis & Parthenon</td>
-      <td><a href="https://www.google.com/maps/place/Athens,+Greece/@37.9908085,23.6559384,12z/data=!3m1!4b1!4m6!3m5!1s0x14a1bd1f067043f1:0x2736354576668ddd!8m2!3d37.9838096!4d23.7275388!16zL20vMG4yeg?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">Google Maps-Athens</a></td>
+      <td><a class="text-decoration-none" href="https://www.google.com/maps/place/Athens,+Greece/@37.9908085,23.6559384,12z/data=!3m1!4b1!4m6!3m5!1s0x14a1bd1f067043f1:0x2736354576668ddd!8m2!3d37.9838096!4d23.7275388!16zL20vMG4yeg?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps-Athens</a></td>
     </tr>
     <tr>
       <th scope="row" class="h5">Thessaloniki</th>
-      <td><a  style="text-decoration: none;" href="https://www.booking.com/searchresults.html?ss=Thessaloniki&ssne=Athens&ssne_untouched=Athens&efdco=1&label=athens-jJZ11*UiRLishp794Q8YwQS553260633045%3Apl%3Ata%3Ap1680%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-125922174%3Alp9018859%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4&aid=336408&lang=en-us&sb=1&src_elem=sb&src=city&dest_id=-829252&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=f0df10a2ef470499&ac_meta=GhBmMGRmMTBhMmVmNDcwNDk5IAAoATICZW46DFRoZXNzYWxvbmlraUAASgBQAA%3D%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&sb_lp=10" target="_blank">booking.com hotels</a></td>
+      <td><a  class="text-decoration-none" href="https://www.booking.com/searchresults.html?ss=Thessaloniki&ssne=Athens&ssne_untouched=Athens&efdco=1&label=athens-jJZ11*UiRLishp794Q8YwQS553260633045%3Apl%3Ata%3Ap1680%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-125922174%3Alp9018859%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7JbsX4&aid=336408&lang=en-us&sb=1&src_elem=sb&src=city&dest_id=-829252&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=f0df10a2ef470499&ac_meta=GhBmMGRmMTBhMmVmNDcwNDk5IAAoATICZW46DFRoZXNzYWxvbmlraUAASgBQAA%3D%3D&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&sb_lp=10" target="_blank">booking.com hotels</a></td>
       <td>White Tower</td>
-      <td>Google Maps</td>
+      <td><a class="text-decoration-none" href="https://www.google.com/search?q=Thessaloniki&sca_esv=a4c5c968ead58a07&cs=1&biw=1440&bih=754&sxsrf=ADLYWIJ09LIpX36AlOKvylnaRBDOgifRXw%3A1737312076001&ei=S0eNZ6jxPI_gp84PvJqomAI&ved=0ahUKEwjowp3pt4KLAxUP8MkDHTwNCiMQ4dUDCBA&uact=5&oq=Thessaloniki&gs_lp=Egxnd3Mtd2l6LXNlcnAiDFRoZXNzYWxvbmlraTIREC4YgAQYkQIYxwEYigUYrwEyCxAAGIAEGJECGIoFMg4QLhiABBiRAhixAxiKBTILEAAYgAQYkQIYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIKEAAYgAQYFBiHAjIgEC4YgAQYkQIYxwEYigUYrwEYlwUY3AQY3gQY4ATYAQFI0ClQvwpYgCZwA3gBkAEAmAHgAaABgwyqAQU0LjcuMbgBA8gBAPgBAZgCD6ACsA3CAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICDhAAGLADGOQCGNYE2AEBwgITEC4YgAQYsAMYQxjIAxiKBdgBAcICChAjGIAEGCcYigXCAgoQLhiABBhDGIoFwgIKEAAYgAQYQxiKBcICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICBBAjGCfCAhAQLhiABBixAxiDARgUGIcCwgIFEC4YgATCAgsQLhiABBixAxiDAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMYgwEYigXCAggQLhiABBjUAsICDRAuGIAEGLEDGEMYigXCAgcQABiABBgKwgIIEC4YgAQYsQPCAg0QLhiABBixAxgUGIcCwgIKEC4YgAQYFBiHApgDAIgGAZAGEroGBggBEAEYCZIHBjMuMTEuMaAH-KcB&sclient=gws-wiz-serp#eim=CAEQCxoRNDAuNjUwNjMyODgyMDUzMzgiETIyLjkzMTQ2MDMzMzk5MDAz" target="_blank">Google Maps-Thessaloniki</a></td>
     </tr>
     <tr>
       <th scope="row" class="h5">Piraeus</th>
-      <td><a style="text-decoration: none;" href="https://www.booking.com/searchresults.html?ss=Piraeus%2C+Attica%2C+Greece&ssne=Thessaloniki&ssne_untouched=Thessaloniki&efdco=1&label=athens-jJZ11*UiRLishp794Q8YwQS553260633045%3Apl%3Ata%3Ap1680%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-125922174%3Alp9018859%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4&aid=336408&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-826292&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=657310e9f4a500d5&ac_meta=GhA2NTczMTBlOWY0YTUwMGQ1IAAoATICZW46B3BpcmFldXNAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0" target="_blank">booking.com hotels</a></td>
-      <td> </td>
-      <td>@twitter</td>
+      <td><a class="text-decoration-none" href="https://www.booking.com/searchresults.html?ss=Piraeus%2C+Attica%2C+Greece&ssne=Thessaloniki&ssne_untouched=Thessaloniki&efdco=1&label=athens-jJZ11*UiRLishp794Q8YwQS553260633045%3Apl%3Ata%3Ap1680%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-125922174%3Alp9018859%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YavywThF4buZQ9k1iY7Jbs4&aid=336408&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-826292&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=657310e9f4a500d5&ac_meta=GhA2NTczMTBlOWY0YTUwMGQ1IAAoATICZW46B3BpcmFldXNAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0" target="_blank">booking.com hotels</a></td>
+      <td>Museum Ship Averof</td>
+      <td><a class="text-decoration-none" href="https://www.google.com/search?q=piraeus+greece&sca_esv=a4c5c968ead58a07&sxsrf=ADLYWIKNgHJAuAcEZlhPvS6DGLOpwBBaaw%3A1737311132784&ei=nEONZ-LFL_viwN4P9ty70QY&gs_ssp=eJzj4tDP1TcoME82NmD04ivILEpMLS1WSC9KTU1OBQBmywhY&oq=piraeus&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3BpcmFldXMqAggCMgQQIxgnMgQQIxgnMg4QLhiABBiRAhixAxiKBTIREC4YgAQYkQIYsQMYgwEYigUyChAAGIAEGEMYigUyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyCxAAGIAEGLEDGIMBMgoQABiABBhDGIoFMh0QLhiABBiRAhixAxiKBRiXBRjcBBjeBBjgBNgBAUjDQ1AAWMspcAF4AZABAJgBqQGgAbAIqgEDMC44uAEDyAEA-AEBmAIKoALaH8ICCxAuGIAEGJECGIoFwgIFEC4YgATCAgUQABiABMICCxAuGIAEGLEDGIMBwgIKECMYgAQYJxiKBcICChAuGIAEGEMYigXCAgsQLhiABBjRAxjHAcICEBAuGIAEGEMYxwEYigUYrwHCAggQABiABBixA8ICEBAuGIAEGLEDGEMYgwEYigXCAhMQLhiABBixAxjRAxhDGMcBGIoFwgIIEC4YgAQY5QTCAgwQLhiABBhDGIoFGArCAiIQLhiABBixAxjRAxhDGMcBGIoFGJcFGNwEGN4EGOAE2AEBwgIHEAAYgAQYCsICBxAuGIAEGAqYAwC6BgYIARABGBSSBwcxLjguOC0xoAfsgQE&sclient=gws-wiz-serp#eim=CAEQDBoRMzcuOTQyOTg1NzAwMDAwMDEiEjIzLjY0Njk4MzIwMDAwMDAwOA" target="_blank">Google Maps-Piraeus</a></td>
     </tr>
     <tr>
-      <th scope="row" class="h5">Hydra</th>
-      <td><a  style="text-decoration: none;" href="" target="_blank">booking.com hotels</a></td>
-      <td> </td>
-      <td>@twitter</td>
+      <th scope="row" class="h5">Ioannina</th>
+      <td><a  class="text-decoration-none" href="https://www.booking.com/city/gr/ioannina.html?aid=1610724;label=ioannina-Giz8iuPd1bvRSBFUbwtdgAS541209877097:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-300672228162:lp1028175:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOG86ZrjetTYr4;ws=&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXJRPrAuea-3Qix-oZiKGXyrYvqPLFuQqITxBEAUc5Ou8wKdg9NfkDcaAlmKEALw_wcB" target="_blank">booking.com hotels</a></td>
+      <td>Bisti Beach</td>
+      <td><a class="text-decoration-none" href="https://www.google.com/search?q=ioannina&oq=ioannina&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhAIARAuGJECGLEDGIAEGIoFMg0IAhAAGJECGIAEGIoFMgwIAxAuGEMYgAQYigUyEwgEEC4YrwEYxwEYkQIYgAQYigUyDQgFEAAYkQIYgAQYigUyBwgGEAAYgAQyBwgHEAAYgAQyDQgIEC4YrwEYxwEYgAQyBwgJEAAYgATSAQg5NzAyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#eim=CAEQDBoSMzkuNjY1MDI4ODAwMDAwMDE2IhIyMC44NTM3NDY1OTk5OTk5ODM" target="_blank">Google Maps-Ioannina</a></td>
     </tr>
     <tr>
-      <th scope="row" class="h5">Lamía, Central Greece</th>
-      <td><a  style="text-decoration: none;" href="" target="_blank">booking.com hotels</td>
-      <td> </td>
-      <td>@twitter</td>
+      <th scope="row" class="h5">Lamía</th>
+      <td><a  class="text-decoration-none" href="https://www.booking.com/searchresults.html?ss=Lamia&ssne=Ioannina&ssne_untouched=Ioannina&efdco=1&label=ioannina-Giz8iuPd1bvRSBFUbwtdgAS541209877097%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-300672228162%3Alp1028175%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOG86ZrjetTYr4&aid=1610724&lang=en-us&sb=1&src_elem=sb&src=city&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&sb_lp=1" target="_blank">booking.com hotels</td>
+      <td>Archaeological Museum of Lamia</td>
+      <td><a class="text-decoration-none" href="https://www.google.com/search?q=Lamia+greece&sca_esv=a4c5c968ead58a07&sxsrf=ADLYWIL0iKS9R0zFQKLbM3EDsoAPwwznsQ%3A1737311905801&ei=oUaNZ-bVMJDlwN4Py4-kmA4&ved=0ahUKEwimqomYt4KLAxWQMtAFHcsHCeMQ4dUDCBA&uact=5&oq=Lamia+greece&gs_lp=Egxnd3Mtd2l6LXNlcnAiDExhbWlhIGdyZWVjZTIEECMYJzIKEC4YgAQYFBiHAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAuGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMwSUMgDWMAQcAJ4AZABAJgBbaABkwaqAQM0LjS4AQPIAQD4AQGYAgqgAtUGwgIHECMYsAMYJ8ICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIKEAAYgAQYQxiKBcICChAuGIAEGEMYigXCAgcQIxiwAhgnwgIHEC4YgAQYDcICBxAAGIAEGA2YAwCIBgGQBhO6BgYIARABGAmSBwM2LjSgB_xR&sclient=gws-wiz-serp#eim=CAEQDBoSMzguOTAxMDcyMDAyMjM3MTY0IhIyMi40NTI2NTI4NTcwMDg4MTg" target="_blank">Google Maps-Lamia</a></td>
     </tr>
     <tr>
-      <th scope="row" class="h5">Rhodes Old Town</th>
-      <td><a style="text-decoration: none;" href="" target="_blank">booking.com hotels</a></td>
-      <td> </td>
-      <td>@twitter</td>
+      <th scope="row" class="h5">Nafplion/Nafplio</th>
+      <td><a class="text-decoration-none" href="https://www.booking.com/searchresults.html?ss=Nafplio%2C+Peloponnese%2C+Greece&ssne=Lam%C3%ADa&ssne_untouched=Lam%C3%ADa&efdco=1&label=ioannina-Giz8iuPd1bvRSBFUbwtdgAS541209877097%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-300672228162%3Alp1028175%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOG86ZrjetTYr4&aid=1610724&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-824497&dest_type=city&place_id=city%2F-824497&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=accc83e45f1106cf&ac_meta=GhA3MjViODNmM2ZkOGEwYzU5IAAoATICZW46B05hZnBsaW9AAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0" target="_blank">booking.com hotels</a></td>
+      <td>Fortress of Palamidi</td>
+      <td><a class="text-decoration-none" href="https://www.google.com/search?q=Nafplio+greece&sca_esv=a4c5c968ead58a07&sxsrf=ADLYWII2tJfkzUxyH8mt_rpZ0YI4WtwYAQ%3A1737311910750&ei=pkaNZ_u6LezJwN4PkY_O6Q0&ved=0ahUKEwj7pbeat4KLAxXsJNAFHZGHM90Q4dUDCBA&uact=5&oq=Nafplio+greece&gs_lp=Egxnd3Mtd2l6LXNlcnAiDk5hZnBsaW8gZ3JlZWNlMgQQIxgnMg4QLhiABBiRAhixAxiKBTIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeSNsnUABY4yNwAXgBkAEAmAGOAaABvQaqAQM0LjS4AQPIAQD4AQGYAgmgAvUGwgIHECMYsAIYJ8ICChAuGIAEGLEDGA3CAgcQABiABBgNmAMAkgcDNC41oAfoQA&sclient=gws-wiz-serp#eim=CAEQDBoKMzcuNTY3MzE3MyISMjIuODAxNTUzMTAwMDAwMDE0" target="_blank">Google Maps-Nafplion</a></td>
     </tr>
     <tr>
       <th scope="row" class="h5">Volos</th>
-      <td><a style="text-decoration: none;" href="" target="_blank">booking.com hotels</td>
-      <td> </td>
-      <td>@twitter</td>
+      <td><a class="text-decoration-none" href="https://www.booking.com/searchresults.html?ss=Volos&ssne=Volos&ssne_untouched=Volos&efdco=1&label=ioannina-Giz8iuPd1bvRSBFUbwtdgAS541209877097%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-300672228162%3Alp1028175%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOG86ZrjetTYr4&aid=1610724&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-830589&dest_type=city&group_adults=2&no_rooms=1&group_children=0" target="_blank">booking.com hotels</td>
+      <td>Centaurs' Path</td>
+      <td><a class="text-decoration-none" href="https://www.google.com/search?q=Volos%5C+greece&sca_esv=a4c5c968ead58a07&sxsrf=ADLYWILWr5QrRwCgdINuZLWdQWJ1dW3JFQ%3A1737311948723&ei=zEaNZ9fzK-jdwN4Pov6PqA4&ved=0ahUKEwjXicWst4KLAxXoLtAFHSL_A-UQ4dUDCBA&uact=5&oq=Volos%5C+greece&gs_lp=Egxnd3Mtd2l6LXNlcnAiDVZvbG9zXCBncmVlY2UyBBAjGCcyDhAuGIAEGJECGLEDGIoFMhAQLhiABBhDGMcBGIoFGK8BMgYQABgHGB4yBRAAGIAEMgsQABiABBiRAhiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIGEAAYBxgeMgYQABgHGB5IoQZQAFiZBnAAeAGQAQCYAa4BoAG5BKoBAzMuMrgBA8gBAPgBAZgCBaAC2gSYAwCSBwMzLjKgB9Yi&sclient=gws-wiz-serp#eim=CAEQDBoJMzkuMzY2NTg0IgoyMi45NTA2NzY5" target="_blank">Google Maps-Volos</a></td>
     </tr>
     <tr>
-      <th scope="row" class="h5">Chania</th>
-      <td><a style="text-decoration: none;" href="" target="_blank">booking.com hotels</td>
-      <td> </td>
-      <td>@twitter</td>
+      <th scope="row" class="h5">Nafpaktos</th>
+      <td><a class="text-decoration-none" href="https://www.booking.com/searchresults.html?ss=Nafpaktos&ssne=Volos&ssne_untouched=Volos&efdco=1&label=ioannina-Giz8iuPd1bvRSBFUbwtdgAS541209877097%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-300672228162%3Alp1028175%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfpWGnRw6lOG86ZrjetTYr4&aid=1610724&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-824495&dest_type=city&place_id=city%2F-824495&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=db40841be9c40c1b&ac_meta=GhA1ZjRjODQyMjMxODgwNjRiIAAoATICZW46CU5hZnBha3Rvc0AASgBQAA%3D%3D&group_adults=2&no_rooms=1&group_children=0" target="_blank">booking.com hotels</td>
+      <td>Venetian Castle of Nafpaktos</td>
+      <td><a class="text-decoration-none" href="https://www.google.com/search?sca_esv=a4c5c968ead58a07&cs=1&sxsrf=ADLYWIKsugO54ORotnM2YMakS3k5tXZzvA:1737312070506&q=Nafpaktos&stick=H4sIAAAAAAAAAOMwVGI0-cWo6ZxZkplarB-SX55XrB-WmZOTmJ5arKCv4F6UmpqcCmT4Jmbm5STmpfxi4oh39QvxDImM38DC-IqFi4tDP1ffIMkoN_kVCzcXJ4hjXGaSWwTnGRYbpZkg5NLiU9IRPPPcFIRKU8Pc5Cw4z8i0oCQLyZTynDS4dUZmJYVI2ixykxAKswyTDBGGmOWVI1mQYWyOZLlFYUo8kgXmKblwnnlxkoERshcyEGYaFhXn5SDLZZnBeenGJkZJcGcmp8QjHGZqYFKRBueZlOQUVSIMKU_LQ1hgbmJZhggx86JcE3MkCwyTy-G8tDJDs6RFrJx-iWkFidkl-cW32CQZup_2GFfO-J7U9OSVLKPjcVVhjiufLbs4OSdxiGKN5kkcbJBonsTBAYtmAO91RtYYAgAA&sa=X&ved=2ahUKEwiV7srmt4KLAxXbRTABHXJhNmwQpeMCegUIABDoAg&biw=1440&bih=754&dpr=2#eim=CAEQDBoSMzguMzk3MDE1NDg1Mjk5MTE0IhIyMS44MzM4MzY5NDcwNDA3Mzc" target="_blank">Google Maps-Chania</a></td>
     </tr>
   </tbody>
 </table>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="https://www.tripmasters.com/europe/greece/vacations?utm_source=goog&utm_medium=dsa&utm_campaign=goog1euroasiaB-europe-dsaxx&gad_source=1&gclid=Cj0KCQiA4rK8BhD7ARIsAFe5LXLkQjMHRY_kmXQMe34mXySlqm6G9sdhdtiwNErprk2lY0i3aBlzxX4aAuI7EALw_wcB" target="_blank" class="btn btn-outline-info">Book a vacation</a>
   </div>
 </div>
-<p><a class="h5 mb-auto text-secondary" style="text-decoration: none;"href="https://www.celebritycruises.com/blog/cities-in-greece" target="_blank">A list of a few more cities to visit</a></p>
  <nav class="navbar bg-info-subtle">
   <div class="container-fluid">
     <a class="navbar-brand m-auto" href="#">
       <img src="images/Travel-Greece-logo.svg" alt="Logo" width="150" class="d-inline-block align-text-top">
     </a>
   </div>
+  <p class="m-auto text-info">Click logo to go to the home page</p>
 </nav>
   </div>
 </nav>
 </div>
-<!--Script telling the site to use the bootstrap bundle. I am using the latest version of bootstrap which doesn't need jquery-->
+<!--Script telling the site to use the bootstrap bundle-->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
 </body>
 </html>

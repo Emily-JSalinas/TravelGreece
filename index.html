@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous"><!--Allows me to use bootstrap in this code-->
     <title>Travel Greece</title>
 </head>
-<body class="bg-info-subtle">
+<body class="bg-light"><!-- bg-info-subtle: background of page is info subtle color-->
   <!--Navbar-->
-<nav class="navbar navbar-expand-lg bg-info-subtle border-bottom border-info-subtle border-4 navbar-light ps-4 sticky-top">
+<nav class="navbar navbar-expand-lg bg-info-subtle border-bottom border-info-subtle border-4 ps-4 sticky-top"><!-- navbar-expand-lg: gives navbar ability to collapse into hamburger menu; bg-info-suble: background color; border-bottom/border-info-subtle/border-4: border on the bottom of the navbar with info subtle as the color with a weight of 4; ps-4: 4 padding at the start(left) of navbar; sticky top-keeps navbar visible at the top as user is scrolling down the page  -->
   <!--Logo-->
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+  <div class="container-fluid"><!-- keeps the width of the object at 100% at any size screen-->
+    <a class="navbar-brand" href="index.html">
       <img src="images/Travel-Greece-logo.svg" width="60" alt="">
     </a>
   <!--Hamburger menu icon-->
@@ -35,11 +35,11 @@
     </div>
   </div>
 </nav>
-<!--carousel, autoplaying-->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/greece1.webp" class="d-block w-100" alt="a panoramic view of a Greek  city at sunset">
+<!--carousel, autoplay with arrows-->
+    <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner"><!--what is "inside" of the carousel-->
+        <div class="carousel-item active"><!-- first item. Active lets the carousel be visible to the user-->
+          <img src="images/greece1.webp" class="d-block w-100" alt="a panoramic view of a Greek  city at sunset"><!--display-block at 100 width-->
         </div>
         <div class="carousel-item">
           <img src="images/greece2.webp" class="d-block w-100" alt="A panoramic view of the water from a Greek city">
@@ -48,56 +48,80 @@
           <img src="images/greece3.jpg" class="d-block w-100" alt="A panoramic view of ruins located in Greece at sunset">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev"><!--Previous slide button-->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><!--fades the arrow until it is hovered over-->
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next"><!--Next slide button-->
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 </div>
 <!--body of About Greece page-->
-<div class="container text-center">
-  <div class="row">
-    <div class="col mt-5">
+<div class="container-fluid border border-info-subtle border-4 m-0 p-5"><!--gives the "body" a border the same width and color as the one for the navbar. m-0: 0 margin so there aren't weird gaps by the carousel and the bottom navbar; p-5: padding is set to 5 so ther isspace between the border and the content of the container -->
+  <div class="row"><!--I wanted to alternate the side the information was on so it didn't look overwhelming to the user-->
+    <div class="col mt-2 "><!--the top margin is set to 2 so there is a nice looking space between the words and whatever is above the column-->
+      <h2>History of Greece</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi. Egestas sed tempus urna et pharetra pharetra. Aliquet eget sit amet tellus cras adipiscing enim. At tellus at urna condimentum mattis pellentesque. Sed faucibus turpis in eu mi bibendum neque egestas. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Nunc non blandit massa enim nec dui nunc mattis. Vel facilisis volutpat est velit. Arcu risus quis varius quam quisque id. Quis enim lobortis scelerisque fermentum dui faucibus. Sed libero enim sed faucibus turpis in. Risus at ultrices mi tempus. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Vel turpis nunc eget lorem dolor sed viverra ipsum. Augue neque gravida in fermentum et sollicitudin ac orci. Non arcu risus quis varius quam quisque id. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Pharetra massa massa ultricies mi.</p>
-
-  <p>Pharetra vel turpis nunc eget. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Nibh praesent tristique magna sit amet purus.</p>
-    </div>
-    <div class="col">
-     <img src="images/columnImage.jpeg" alt="Buildings in Santorini with blue dome roofs" width="500px">
+      <p>Pharetra vel turpis nunc eget. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Nibh praesent tristique magna sit amet purus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor laoreet enim vitae lacinia. Phasellus viverra, metus ac laoreet accumsan, tortor libero luctus lorem, sit amet euismod mauris massa nec turpis. Vestibulum fermentum molestie nibh, sed sodales diam dapibus in. Nulla facilisi. Aliquam erat volutpat. Praesent tincidunt ligula sit amet dui egestas rhoncus. Sed in nibh dolor. Proin rutrum justo tellus, in accumsan leo convallis lobortis. Nullam sagittis, nisl nec varius ultricies, sem metus imperdiet quam, vel dictum nibh est id orci. Ut eu accumsan risus, ac gravida diam.        Proin lacinia auctor laoreet. Nulla pretium hendrerit diam ut cursus. Ut suscipit elit at varius suscipit. Quisque ac facilisis quam. Mauris ullamcorper urna a rutrum condimentum. Maecenas efficitur tellus lacus, sed eleifend mi semper et. Suspendisse cursus velit non feugiat tincidunt. Cras pharetra ac nulla eu hendrerit. Sed elit libero, posuere vehicula massa non, vestibulum sagittis diam. Aliquam blandit justo at dui tincidunt tristique.</p>
+      </div>
+    <div class="col"><!--I didn't put a margin for the photos because I wanted the corners of the photos to touch the other photos -->
+     <img src="images/columnImage2.jpg" alt="Windmills on the island of Mykonos">
     </div>
   </div>
-  <div class="container text-center">
     <div class="row">
       <div class="col">
-        <img src="images/columnImage.jpeg" alt="Buildings in Santorini with blue dome roofs" width="500px">
-       
+        <img src="images/columnimage.jpg" alt="Photo of a beach taken from inside of a cave">
       </div>
-      <div class="col mt-5" >
+      <div class="col mt-2" >
+        <h2>Beaches of Greece</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi. Egestas sed tempus urna et pharetra pharetra. Aliquet eget sit amet tellus cras adipiscing enim. At tellus at urna condimentum mattis pellentesque. Sed faucibus turpis in eu mi bibendum neque egestas. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Nunc non blandit massa enim nec dui nunc mattis. Vel facilisis volutpat est velit. Arcu risus quis varius quam quisque id. Quis enim lobortis scelerisque fermentum dui faucibus. Sed libero enim sed faucibus turpis in. Risus at ultrices mi tempus. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Vel turpis nunc eget lorem dolor sed viverra ipsum. Augue neque gravida in fermentum et sollicitudin ac orci. Non arcu risus quis varius quam quisque id. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Pharetra massa massa ultricies mi.</p>
-  
-    <p>Pharetra vel turpis nunc eget. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Nibh praesent tristique magna sit amet purus.</p>
+       <p>Pharetra vel turpis nunc eget. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Nibh praesent tristique magna sit amet purus.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor laoreet enim vitae lacinia. Phasellus viverra, metus ac laoreet accumsan, tortor libero luctus lorem, sit amet euismod mauris massa nec turpis. Vestibulum fermentum molestie nibh, sed sodales diam dapibus in. Nulla facilisi. Aliquam erat volutpat. Praesent tincidunt ligula sit amet dui egestas rhoncus. Sed in nibh dolor. Proin rutrum justo tellus, in accumsan leo convallis lobortis. Nullam sagittis, nisl nec varius ultricies, sem metus imperdiet quam, vel dictum nibh est id orci. Ut eu accumsan risus, ac gravida diam.        Proin lacinia auctor laoreet. Nulla pretium hendrerit diam ut cursus. Ut suscipit elit at varius suscipit. Quisque ac facilisis quam. Mauris ullamcorper urna a rutrum condimentum. Maecenas efficitur tellus lacus, sed eleifend mi semper et. Suspendisse cursus velit non feugiat tincidunt. Cras pharetra ac nulla eu hendrerit. Sed elit libero, posuere vehicula massa non, vestibulum sagittis diam. Aliquam blandit justo at dui tincidunt tristique.</p>
       </div>
     </div>
-<div>
- <nav class="navbar bg-info-subtle">
+    <div class="row m-5">
+       <img src="images/ColumnImage3.webp" alt="Arial view of a beach">
+    </div>
+    <div class="row">
+      <div class="col mt-2">
+        <h2>Greek Traditions</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi. Egestas sed tempus urna et pharetra pharetra. Aliquet eget sit amet tellus cras adipiscing enim. At tellus at urna condimentum mattis pellentesque. Sed faucibus turpis in eu mi bibendum neque egestas. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Nunc non blandit massa enim nec dui nunc mattis. Vel facilisis volutpat est velit. Arcu risus quis varius quam quisque id. Quis enim lobortis scelerisque fermentum dui faucibus. Sed libero enim sed faucibus turpis in. Risus at ultrices mi tempus. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Vel turpis nunc eget lorem dolor sed viverra ipsum. Augue neque gravida in fermentum et sollicitudin ac orci. Non arcu risus quis varius quam quisque id. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Pharetra massa massa ultricies mi.</p>
+        <p>Pharetra vel turpis nunc eget. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Nibh praesent tristique magna sit amet purus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor laoreet enim vitae lacinia. Phasellus viverra, metus ac laoreet accumsan, tortor libero luctus lorem, sit amet euismod mauris massa nec turpis. Vestibulum fermentum molestie nibh, sed sodales diam dapibus in. Nulla facilisi. Aliquam erat volutpat. Praesent tincidunt ligula sit amet dui egestas rhoncus. Sed in nibh dolor. Proin rutrum justo tellus, in accumsan leo convallis lobortis. Nullam sagittis, nisl nec varius ultricies, sem metus imperdiet quam, vel dictum nibh est id orci. Ut eu accumsan risus, ac gravida diam.        Proin lacinia auctor laoreet. Nulla pretium hendrerit diam ut cursus. Ut suscipit elit at varius suscipit. Quisque ac facilisis quam. Mauris ullamcorper urna a rutrum condimentum. Maecenas efficitur tellus lacus, sed eleifend mi semper et. Suspendisse cursus velit non feugiat tincidunt. Cras pharetra ac nulla eu hendrerit. Sed elit libero, posuere vehicula massa non, vestibulum sagittis diam. Aliquam blandit justo at dui tincidunt tristique.</p>
+      </div>
+      <div class="col">
+        <img src="images/columnImage4.jpg" alt="A footpath to white buildings"><!--I wanted to break up the information a bit more with another image that took up the width of the container for the purpose of not overwhelming the user with information-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="images/columnimage5.jpg" alt="a Small harbor with tables and chairs next to a white building">
+      </div>
+      <div class="col mt-2" >
+        <h2>Tours of Greece</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi. Egestas sed tempus urna et pharetra pharetra. Aliquet eget sit amet tellus cras adipiscing enim. At tellus at urna condimentum mattis pellentesque. Sed faucibus turpis in eu mi bibendum neque egestas. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Nunc non blandit massa enim nec dui nunc mattis. Vel facilisis volutpat est velit. Arcu risus quis varius quam quisque id. Quis enim lobortis scelerisque fermentum dui faucibus. Sed libero enim sed faucibus turpis in. Risus at ultrices mi tempus. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Vel turpis nunc eget lorem dolor sed viverra ipsum. Augue neque gravida in fermentum et sollicitudin ac orci. Non arcu risus quis varius quam quisque id. Dictum varius duis at consectetur lorem donec massa sapien faucibus. Pharetra massa massa ultricies mi.</p>
+       <p>Pharetra vel turpis nunc eget. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Nibh praesent tristique magna sit amet purus.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor laoreet enim vitae lacinia. Phasellus viverra, metus ac laoreet accumsan, tortor libero luctus lorem, sit amet euismod mauris massa nec turpis. Vestibulum fermentum molestie nibh, sed sodales diam dapibus in. Nulla facilisi. Aliquam erat volutpat. Praesent tincidunt ligula sit amet dui egestas rhoncus. Sed in nibh dolor. Proin rutrum justo tellus, in accumsan leo convallis lobortis. Nullam sagittis, nisl nec varius ultricies, sem metus imperdiet quam, vel dictum nibh est id orci. Ut eu accumsan risus, ac gravida diam.        Proin lacinia auctor laoreet. Nulla pretium hendrerit diam ut cursus. Ut suscipit elit at varius suscipit. Quisque ac facilisis quam. Mauris ullamcorper urna a rutrum condimentum. Maecenas efficitur tellus lacus, sed eleifend mi semper et. Suspendisse cursus velit non feugiat tincidunt. Cras pharetra ac nulla eu hendrerit. Sed elit libero, posuere vehicula massa non, vestibulum sagittis diam. Aliquam blandit justo at dui tincidunt tristique.</p>
+      </div>
+    </div>
+  </div>
+ <nav class="navbar bg-info-subtle"><!--Another navbar that includes a bigger version of the logo-->
   <div class="container-fluid">
-    <a class="navbar-brand m-auto" href="#">
+    <a class="navbar-brand m-auto" href="#"><!--leaving href="#" will bring the user back up to the top of the page-->
       <img src="images/Travel-Greece-logo.svg" alt="Logo" width="150" class="d-inline-block align-text-top">
     </a>
   </div>
+  <p class="m-auto text-info">Click logo to go back to the top of the page</p>
 </nav>
-  </div>
+
 </nav>
 </div>
-<!--Script telling the site to use the bootstrap bundle. I am using the latest version of bootstrap which doesn't need jquery-->
+
+<!--Script telling the site to use the bootstrap bundle-->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
 </body>
 </html>
-
-
-<!--bootstrap grid to format elements-->
-<!--Elements should stack vertically when window is small-->
